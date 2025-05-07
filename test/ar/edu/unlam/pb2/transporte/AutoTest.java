@@ -40,7 +40,7 @@ public class AutoTest {
 		}
 		
 		Integer cantidadEsperada = auto.getCantidadDePaquetes();
-		//assertEquals(cantidadEsperada, cantidadTotalDePaquetesCargados);
+		assertEquals("No debería superar el límite de volumen total", auto.getCantidadDePaquetes().intValue(), cantidadTotalDePaquetesCargados);
 		assertTrue("El volumen total no debe superar 2.0", cantidadEsperada < 30);
 	}
 
