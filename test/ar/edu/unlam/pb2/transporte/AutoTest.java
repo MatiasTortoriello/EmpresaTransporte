@@ -30,7 +30,14 @@ public class AutoTest {
 	
 	public void queNoSePuedaSuperarLaCantidadDePaquetes() {
 		Auto auto = new Auto();
-		Paquete paquete = new Paquete(0.1, 0.1, 0.1, null);
+		Paquete paquete = new Paquete(0.1, 0.1, 0.1, 1.0);
+		
+		int cantidadTotalDePaquetesCargados = 0;
+		for (int i = 0; i < 30; i++) { 
+			if (auto.agregar(paquete, "Ituzaingó")) {
+				cantidadTotalDePaquetesCargados++;
+			}
+		}
 	}
 
 	@Test
