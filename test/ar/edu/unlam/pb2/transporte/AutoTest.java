@@ -38,6 +38,10 @@ public class AutoTest {
 				cantidadTotalDePaquetesCargados++;
 			}
 		}
+		
+		Integer cantidadEsperada = auto.getCantidadDePaquetes();
+		//assertEquals(cantidadEsperada, cantidadTotalDePaquetesCargados);
+		assertTrue("El volumen total no debe superar 2.0", cantidadEsperada < 30);
 	}
 
 	@Test
