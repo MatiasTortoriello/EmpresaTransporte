@@ -1,0 +1,18 @@
+Herencia (es un)  - Composición (tiene un)
+Vehiculo / Transporte
+
+Abstract / Interface
+
+4. Vehiculo <------> Paquete 
+
+1. Bicicleta <-----> Paquete
+2 .Automovil
+3 .Camion
+------
+1.1 Paquete
+------
+No modelar -> Administrador 
+-> escenarios de test. -> Entorno web.
+
+size- 0 - 1       2      3
+         <p1>----<p2>---<p3> -> LinkedList
